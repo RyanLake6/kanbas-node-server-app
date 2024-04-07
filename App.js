@@ -16,6 +16,7 @@ app.use(
     origin: process.env.FRONTEND_URL,
   })
 );
+app.use(express.json());
 const sessionOptions = {
   secret: process.env.SESSION_SECRET,
   resave: false,
@@ -29,7 +30,6 @@ if (process.env.NODE_ENV !== "development") {
   };
 }
 app.use(session(sessionOptions));
-app.use(express.json());
 CourseRoutes(app);
 ModuleRoutes(app);
 Lab5(app);
