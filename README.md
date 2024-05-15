@@ -6,3 +6,11 @@ This project was an excercise within the NEU CS 4550 Web Development class to le
 
 - It stores all data within a noSQL MongoDB which is hosted through [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database)
 - The Node.js server is deployed through [Render](https://render.com/)
+
+## Running the project
+
+To run locally run the following in the project directory:
+
+`node App.js`
+
+This will run the project on http://localhost:4000/
